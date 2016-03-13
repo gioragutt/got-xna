@@ -131,21 +131,21 @@ namespace Game_Of_Throws
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            this.Window.Title = "Game Of Throws";
+            Window.Title = "Game Of Throws";
 
             // Game window resolution
-            this.graphics.PreferredBackBufferHeight = 1024;
-            this.graphics.PreferredBackBufferWidth = 1280;
-            this.graphics.IsFullScreen = false;
+            graphics.PreferredBackBufferHeight = 1024;
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.IsFullScreen = false;
 
             // Various settings
             if (DEBUG_MODE)
             {
-                this.IsMouseVisible = true;
+                IsMouseVisible = true;
             }
             else
             {
-                this.IsMouseVisible = false;
+                IsMouseVisible = false;
             }
 
             bIsShopOpen = false;
@@ -153,7 +153,7 @@ namespace Game_Of_Throws
             // Place arguments in args
             this.args = args;
 
-            projectileHandler = new ProjectileHandler(this.Content);
+            projectileHandler = new ProjectileHandler(Content);
         }
 
         /// <summary>
@@ -210,7 +210,7 @@ namespace Game_Of_Throws
             #region Connection Initialization
 
             // Intialiaze new connection
-            cntConnection = new Connection(this.plrLocal);
+            cntConnection = new Connection(plrLocal);
 
             try
             {
@@ -235,7 +235,7 @@ namespace Game_Of_Throws
                                 MessageBoxButtons.OK,
                                 System.Windows.Forms.MessageBoxIcon.Exclamation,
                                 MessageBoxDefaultButton.Button1);
-                this.Exit();
+                Exit();
             }
 
             #endregion
@@ -325,32 +325,32 @@ namespace Game_Of_Throws
             // Load player texture
             // TODO : Add other texures
 
-            tPlayerTexture[(int)Direction.Up, 0] = this.Content.Load<Texture2D>("Player/BClayAvatarB");
-            tPlayerTexture[(int)Direction.Up, 1] = this.Content.Load<Texture2D>("Player/BClayAvatarA");
+            tPlayerTexture[(int)Direction.Up, 0] = Content.Load<Texture2D>("Player/BClayAvatarB");
+            tPlayerTexture[(int)Direction.Up, 1] = Content.Load<Texture2D>("Player/BClayAvatarA");
             tPlayerTexture[(int)Direction.Up, 2] = tPlayerTexture[(int)Direction.Up, 0];
-            tPlayerTexture[(int)Direction.Up, 3] = this.Content.Load<Texture2D>("Player/BClayAvatarC");
+            tPlayerTexture[(int)Direction.Up, 3] = Content.Load<Texture2D>("Player/BClayAvatarC");
 
-            tPlayerTexture[(int)Direction.Left, 0] = this.Content.Load<Texture2D>("Player/LClayAvatarB");
-            tPlayerTexture[(int)Direction.Left, 1] = this.Content.Load<Texture2D>("Player/LClayAvatarA");
+            tPlayerTexture[(int)Direction.Left, 0] = Content.Load<Texture2D>("Player/LClayAvatarB");
+            tPlayerTexture[(int)Direction.Left, 1] = Content.Load<Texture2D>("Player/LClayAvatarA");
             tPlayerTexture[(int)Direction.Left, 2] = tPlayerTexture[(int)Direction.Left, 0];
-            tPlayerTexture[(int)Direction.Left, 3] = this.Content.Load<Texture2D>("Player/LClayAvatarC");
+            tPlayerTexture[(int)Direction.Left, 3] = Content.Load<Texture2D>("Player/LClayAvatarC");
 
-            tPlayerTexture[(int)Direction.Down, 0] = this.Content.Load<Texture2D>("Player/FClayAvatarB");
-            tPlayerTexture[(int)Direction.Down, 1] = this.Content.Load<Texture2D>("Player/FClayAvatarA");
+            tPlayerTexture[(int)Direction.Down, 0] = Content.Load<Texture2D>("Player/FClayAvatarB");
+            tPlayerTexture[(int)Direction.Down, 1] = Content.Load<Texture2D>("Player/FClayAvatarA");
             tPlayerTexture[(int)Direction.Down, 2] = tPlayerTexture[(int)Direction.Down, 0];
-            tPlayerTexture[(int)Direction.Down, 3] = this.Content.Load<Texture2D>("Player/FClayAvatarC");
+            tPlayerTexture[(int)Direction.Down, 3] = Content.Load<Texture2D>("Player/FClayAvatarC");
 
-            tPlayerTexture[(int)Direction.Right, 0] = this.Content.Load<Texture2D>("Player/RClayAvatarB");
-            tPlayerTexture[(int)Direction.Right, 1] = this.Content.Load<Texture2D>("Player/RClayAvatarA");
+            tPlayerTexture[(int)Direction.Right, 0] = Content.Load<Texture2D>("Player/RClayAvatarB");
+            tPlayerTexture[(int)Direction.Right, 1] = Content.Load<Texture2D>("Player/RClayAvatarA");
             tPlayerTexture[(int)Direction.Right, 2] = tPlayerTexture[(int)Direction.Right, 0];
-            tPlayerTexture[(int)Direction.Right, 3] = this.Content.Load<Texture2D>("Player/RClayAvatarC");
+            tPlayerTexture[(int)Direction.Right, 3] = Content.Load<Texture2D>("Player/RClayAvatarC");
 
             #endregion
 
             #region Health Bar Textures
 
-            tHpBarLayout[0] = this.Content.Load<Texture2D>("HealthBars/RedHealthBarV2");
-            tHpBarLayout[1] = this.Content.Load<Texture2D>("HealthBars/GreenHealthBarV2");
+            tHpBarLayout[0] = Content.Load<Texture2D>("HealthBars/RedHealthBarV2");
+            tHpBarLayout[1] = Content.Load<Texture2D>("HealthBars/GreenHealthBarV2");
 
             #endregion
 
@@ -364,20 +364,20 @@ namespace Game_Of_Throws
             #region Block Textures
 
             // Load blocks textures
-            tBlocks[(int)BlockID.LogFront] = this.Content.Load<Texture2D>("Blocks/Wood/LogFront");
-            tBlocks[(int)BlockID.LogBack] = this.Content.Load<Texture2D>("Blocks/Wood/LogBack");
-            tBlocks[(int)BlockID.LogLeft] = this.Content.Load<Texture2D>("Blocks/Wood/LogLeft");
-            tBlocks[(int)BlockID.LogRight] = this.Content.Load<Texture2D>("Blocks/Wood/LogRight");
-            tBlocks[(int)BlockID.LogCUL] = this.Content.Load<Texture2D>("Blocks/Wood/LogCUL");
-            tBlocks[(int)BlockID.LogCUR] = this.Content.Load<Texture2D>("Blocks/Wood/LogCUR");
-            tBlocks[(int)BlockID.LogCDL] = this.Content.Load<Texture2D>("Blocks/Wood/LogCDL");
-            tBlocks[(int)BlockID.LogCDR] = this.Content.Load<Texture2D>("Blocks/Wood/LogCDR");
-            tBlocks[(int)BlockID.Bricks] = this.Content.Load<Texture2D>("Blocks/Brick/Bricks");
-            tBlocks[(int)BlockID.BloodyBricks1] = this.Content.Load<Texture2D>("Blocks/Brick/BloodyBricks1");
-            tBlocks[(int)BlockID.BloodyBricks2] = this.Content.Load<Texture2D>("Blocks/Brick/BloodyBricks2");
-            tBlocks[(int)BlockID.BloodyBricks3] = this.Content.Load<Texture2D>("Blocks/Brick/BloodyBricks3");
-            tBlocks[(int)BlockID.MossyBricks1] = this.Content.Load<Texture2D>("Blocks/Brick/MossyBricks1");
-            tBlocks[(int)BlockID.MossyBricks2] = this.Content.Load<Texture2D>("Blocks/Brick/MossyBricks2");
+            tBlocks[(int)BlockID.LogFront] = Content.Load<Texture2D>("Blocks/Wood/LogFront");
+            tBlocks[(int)BlockID.LogBack] = Content.Load<Texture2D>("Blocks/Wood/LogBack");
+            tBlocks[(int)BlockID.LogLeft] = Content.Load<Texture2D>("Blocks/Wood/LogLeft");
+            tBlocks[(int)BlockID.LogRight] = Content.Load<Texture2D>("Blocks/Wood/LogRight");
+            tBlocks[(int)BlockID.LogCUL] = Content.Load<Texture2D>("Blocks/Wood/LogCUL");
+            tBlocks[(int)BlockID.LogCUR] = Content.Load<Texture2D>("Blocks/Wood/LogCUR");
+            tBlocks[(int)BlockID.LogCDL] = Content.Load<Texture2D>("Blocks/Wood/LogCDL");
+            tBlocks[(int)BlockID.LogCDR] = Content.Load<Texture2D>("Blocks/Wood/LogCDR");
+            tBlocks[(int)BlockID.Bricks] = Content.Load<Texture2D>("Blocks/Brick/Bricks");
+            tBlocks[(int)BlockID.BloodyBricks1] = Content.Load<Texture2D>("Blocks/Brick/BloodyBricks1");
+            tBlocks[(int)BlockID.BloodyBricks2] = Content.Load<Texture2D>("Blocks/Brick/BloodyBricks2");
+            tBlocks[(int)BlockID.BloodyBricks3] = Content.Load<Texture2D>("Blocks/Brick/BloodyBricks3");
+            tBlocks[(int)BlockID.MossyBricks1] = Content.Load<Texture2D>("Blocks/Brick/MossyBricks1");
+            tBlocks[(int)BlockID.MossyBricks2] = Content.Load<Texture2D>("Blocks/Brick/MossyBricks2");
 
             #endregion
 
@@ -405,65 +405,65 @@ namespace Game_Of_Throws
 
             #region Item Icons
             
-            tItemIcons[0] = this.Content.Load<Texture2D>("Items/Icons/EmeraldStaffOfExiledMonksIcon");
-            tItemIcons[1] = this.Content.Load<Texture2D>("Items/Icons/RingOfGodsFuryIcon");
-            tItemIcons[2] = this.Content.Load<Texture2D>("Items/Icons/BootiesIcon");
-            tItemIcons[3] = this.Content.Load<Texture2D>("Items/Icons/ArmorOfBoozeIcon");
-            tItemIcons[4] = this.Content.Load<Texture2D>("Items/Icons/BROwAndArrow");
+            tItemIcons[0] = Content.Load<Texture2D>("Items/Icons/EmeraldStaffOfExiledMonksIcon");
+            tItemIcons[1] = Content.Load<Texture2D>("Items/Icons/RingOfGodsFuryIcon");
+            tItemIcons[2] = Content.Load<Texture2D>("Items/Icons/BootiesIcon");
+            tItemIcons[3] = Content.Load<Texture2D>("Items/Icons/ArmorOfBoozeIcon");
+            tItemIcons[4] = Content.Load<Texture2D>("Items/Icons/BROwAndArrow");
 
             #endregion
 
             #region Emerald Staff Of Exiled Monks Textures
 
-            tEmeraldStaffSkill[0] = this.Content.Load<Texture2D>("Skills/Emerald Staff/LazerHorizontal");
-            tEmeraldStaffSkill[1] = this.Content.Load<Texture2D>("Skills/Emerald Staff/LazerVertical");
+            tEmeraldStaffSkill[0] = Content.Load<Texture2D>("Skills/Emerald Staff/LazerHorizontal");
+            tEmeraldStaffSkill[1] = Content.Load<Texture2D>("Skills/Emerald Staff/LazerVertical");
 
             #endregion
 
-            tSelectedBorder = this.Content.Load<Texture2D>("Items/SelectedBorder");
+            tSelectedBorder = Content.Load<Texture2D>("Items/SelectedBorder");
 
             #endregion
 
             #region ScoreTab Textures
 
             // Load floating name font
-            sfPlayerNameFont = this.Content.Load<SpriteFont>("Player/FloatingNameFont");
+            sfPlayerNameFont = Content.Load<SpriteFont>("Player/FloatingNameFont");
 
             // Load scores tab font
-            sfScoresTabFont = this.Content.Load<SpriteFont>("ScoresTab/Ping");
+            sfScoresTabFont = Content.Load<SpriteFont>("ScoresTab/Ping");
 
             // Mini Score Tab texture
-            tMiniScoreTab = this.Content.Load<Texture2D>("ScoresTab/MiniScoreTab");
+            tMiniScoreTab = Content.Load<Texture2D>("ScoresTab/MiniScoreTab");
 
             // Mini Scores Tab font
-            sfMiniScoresTabFont = this.Content.Load<SpriteFont>("ScoresTab/MiniScoresTabFont");
+            sfMiniScoresTabFont = Content.Load<SpriteFont>("ScoresTab/MiniScoresTabFont");
 
             // Score tab texture
-            tScoreTab = this.Content.Load<Texture2D>("ScoresTab/ScoresTab");
+            tScoreTab = Content.Load<Texture2D>("ScoresTab/ScoresTab");
 
             // Scores tab details font
-            sfScoresTabDetailsFont = this.Content.Load<SpriteFont>("ScoresTab/ScoreTabFont");
+            sfScoresTabDetailsFont = Content.Load<SpriteFont>("ScoresTab/ScoreTabFont");
 
             // Score Board texture
-            tScoreBoardTexture = this.Content.Load<Texture2D>("ScoresTab/ScoreBoard");
+            tScoreBoardTexture = Content.Load<Texture2D>("ScoresTab/ScoreBoard");
 
             // Score Board font
-            sfScoreBoardFont = this.Content.Load<SpriteFont>("ScoresTab/ScoreBoardFont");
+            sfScoreBoardFont = Content.Load<SpriteFont>("ScoresTab/ScoreBoardFont");
 
             #endregion
 
             #region Shop Textures
 
-            sfShopFont = this.Content.Load<SpriteFont>("Shop/ShopFont");
-            sfShopTooltipFont = this.Content.Load<SpriteFont>("Shop/ShopTooltipFont");
+            sfShopFont = Content.Load<SpriteFont>("Shop/ShopFont");
+            sfShopTooltipFont = Content.Load<SpriteFont>("Shop/ShopTooltipFont");
 
             #endregion
 
             #region Effects
 
-            effPlayer = this.Content.Load<Effect>("Effects/PlayerEffects");
-            effItemIcons = this.Content.Load<Effect>("Effects/ItemIconEffects");
-            effRingOfGodsFury = this.Content.Load<Effect>("Effects/RingOfGodsFury");
+            effPlayer = Content.Load<Effect>("Effects/PlayerEffects");
+            effItemIcons = Content.Load<Effect>("Effects/ItemIconEffects");
+            effRingOfGodsFury = Content.Load<Effect>("Effects/RingOfGodsFury");
 
             #endregion
 
@@ -476,7 +476,7 @@ namespace Game_Of_Throws
         /// </summary>
         protected override void UnloadContent()
         {
-            this.Content.Unload();
+            Content.Unload();
         }
 
         /// <summary>
@@ -488,19 +488,19 @@ namespace Game_Of_Throws
         {
             if (Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Escape))
             {
-                this.Exit();
+                Exit();
             }
 
             if (Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.F11))
             {
-                this.graphics.ToggleFullScreen();
+                graphics.ToggleFullScreen();
             }
 
             // Update network players
             cntConnection.Update();
 
             // Update camera for local player
-            Camera.UpdateCamera(this.plrLocal, this.GraphicsDevice);
+            Camera.UpdateCamera(plrLocal, GraphicsDevice);
 
             // Handle keyboard input
             KeyboardHandler.Handle(plrLocal, out bIsScoreTabShown);
@@ -528,7 +528,7 @@ namespace Game_Of_Throws
                 spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, null, null, null, null, Camera.CameraMatrix);
 
                 // Draw game map
-                gameMap.Draw(spriteBatch, this.GraphicsDevice.Viewport);
+                gameMap.Draw(spriteBatch, GraphicsDevice.Viewport);
 
                 spriteBatch.End();
 
@@ -556,10 +556,10 @@ namespace Game_Of_Throws
                 for (byte bCurrIndex = 0; bCurrIndex < Inventory.INVENTORY_SIZE; bCurrIndex++)
                 {
                     // If the player got the item
-                    if (this.plrLocal.Inventory[bCurrIndex] != null)
+                    if (plrLocal.Inventory[bCurrIndex] != null)
                     {
                         // Set fill amount parameter
-                        effItemIcons.Parameters["fFillAmount"].SetValue(this.plrLocal.Inventory[bCurrIndex].FillAmount);
+                        effItemIcons.Parameters["fFillAmount"].SetValue(plrLocal.Inventory[bCurrIndex].FillAmount);
 
                         spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, null, null, null, null);
 
@@ -581,13 +581,13 @@ namespace Game_Of_Throws
                         }
 
                         // If mana cost is bigger than current mana
-                        if (this.plrLocal.Inventory[bCurrIndex].ManaCost > plrLocal.MP)
+                        if (plrLocal.Inventory[bCurrIndex].ManaCost > plrLocal.MP)
                         {
                             effItemIcons.CurrentTechnique.Passes["NotEnoughMana"].Apply();
                         }
 
                         // Draw the icon
-                        spriteBatch.Draw(this.plrLocal.Inventory[bCurrIndex].Icon,
+                        spriteBatch.Draw(plrLocal.Inventory[bCurrIndex].Icon,
                                          new Rectangle(10 + (50 * nCurrItem),
                                                        GraphicsDevice.Viewport.Height - 70,
                                                        48,
@@ -618,7 +618,7 @@ namespace Game_Of_Throws
                 #region Team Score
 
                 spriteBatch.Draw(tScoreBoardTexture,
-                                 new Rectangle(this.GraphicsDevice.Viewport.Width / 2 - tScoreBoardTexture.Width / 2,
+                                 new Rectangle(GraphicsDevice.Viewport.Width / 2 - tScoreBoardTexture.Width / 2,
                                                5,
                                                tScoreBoardTexture.Width, tScoreBoardTexture.Height),
                                  Color.White);
@@ -639,7 +639,7 @@ namespace Game_Of_Throws
                 #region Layout
 
                 spriteBatch.Draw(tMiniScoreTab,
-                                 new Rectangle(this.GraphicsDevice.Viewport.Width - tMiniScoreTab.Width,
+                                 new Rectangle(GraphicsDevice.Viewport.Width - tMiniScoreTab.Width,
                                                0, tMiniScoreTab.Width, tMiniScoreTab.Height),
                                  Color.White);
 
@@ -649,21 +649,21 @@ namespace Game_Of_Throws
 
                 spriteBatch.DrawString(sfMiniScoresTabFont,
                                        "Ping : " + cntConnection.Ping +
-                                       "\nGold : " + this.plrLocal.Gold,
+                                       "\nGold : " + plrLocal.Gold,
                                        new Vector2(GraphicsDevice.Viewport.Width - 350, 5),
                                        Color.Azure);
 
                 spriteBatch.DrawString(sfMiniScoresTabFont,
-                                       "Kill      : " + this.plrLocal.Kills +
-                                       "\nDeath : " + this.plrLocal.Deaths,
+                                       "Kill      : " + plrLocal.Kills +
+                                       "\nDeath : " + plrLocal.Deaths,
                                        new Vector2(GraphicsDevice.Viewport.Width - 255, 5),
                                        Color.Azure);
 
                 spriteBatch.DrawString(sfMiniScoresTabFont,
-                                       "Health : " + this.plrLocal.HP +
-                                       " / " + this.plrLocal.MaxHP + "\n" +
-                                       "Mana   : " + this.plrLocal.MP +
-                                       " / " + this.plrLocal.MaxMP,
+                                       "Health : " + plrLocal.HP +
+                                       " / " + plrLocal.MaxHP + "\n" +
+                                       "Mana   : " + plrLocal.MP +
+                                       " / " + plrLocal.MaxMP,
                                        new Vector2(GraphicsDevice.Viewport.Width - 160, 5),
                                        Color.Azure);
 
@@ -690,20 +690,20 @@ namespace Game_Of_Throws
                     {
                         // Draw the velocity shiiiiiiit
                         spriteBatch.DrawString(sfPlayerNameFont,
-                                               "VelX : " + Math.Round(this.plrLocal.VelX, 3) +
-                                               "\nVelY : " + Math.Round(this.plrLocal.VelY, 3),
-                                               new Vector2(this.GraphicsDevice.Viewport.Width / 100, 20), Color.White);
+                                               "VelX : " + Math.Round(plrLocal.VelX, 3) +
+                                               "\nVelY : " + Math.Round(plrLocal.VelY, 3),
+                                               new Vector2(GraphicsDevice.Viewport.Width / 100, 20), Color.White);
                         // Draw the velocity shiiiiiiit
                         spriteBatch.DrawString(sfPlayerNameFont,
-                                               "| PosX : " + this.plrLocal.PosX +
-                                               "\n| PosY : " + this.plrLocal.PosY,
-                                               new Vector2(this.GraphicsDevice.Viewport.Width / 100 + 120, 20), Color.White);
+                                               "| PosX : " + plrLocal.PosX +
+                                               "\n| PosY : " + plrLocal.PosY,
+                                               new Vector2(GraphicsDevice.Viewport.Width / 100 + 120, 20), Color.White);
 
                         // Show the camera position
                         spriteBatch.DrawString(sfPlayerNameFont,
                                                "| ViewportX : " + Camera.CameraVector.X +
                                                "\n| ViewportY : " + Camera.CameraVector.Y,
-                                               new Vector2(this.GraphicsDevice.Viewport.Width / 100 + 250, 20), Color.White);
+                                               new Vector2(GraphicsDevice.Viewport.Width / 100 + 250, 20), Color.White);
                     }
 
                     #endregion
@@ -715,7 +715,7 @@ namespace Game_Of_Throws
 
                 if (bIsShopOpen)
                 {
-                    ItemShop.Draw(spriteBatch, this.GraphicsDevice.Viewport);
+                    ItemShop.Draw(spriteBatch, GraphicsDevice.Viewport);
                 }
 
                 #endregion
