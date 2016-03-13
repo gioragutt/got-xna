@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LeftHandPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;ChestItemLabel.Name" xml:space="preserve">
+    <value>ChestItemLabel</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemDesc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ChestPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RightHandListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ChestItemLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemDesc.Name" xml:space="preserve">
+    <value>RightHandItemDesc</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LegsPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 283</value>
+  </data>
+  <data name="RightHandItemDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 14</value>
+  </data>
+  <data name="&gt;&gt;LeftHandPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HeadPictureBox.Name" xml:space="preserve">
+    <value>HeadPictureBox</value>
+  </data>
+  <data name="ChestPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 78</value>
+  </data>
+  <data name="&gt;&gt;LegsPictureBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="HeadItemLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RightHandListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="RightHandPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;HeadItemLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RightHandItemLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 14</value>
+  </data>
+  <data name="ChestItemLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 130</value>
+  </data>
+  <data name="&gt;&gt;LegsPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChestItemLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeftHandListBox.Items" xml:space="preserve">
+    <value>Stick</value>
+  </data>
+  <data name="&gt;&gt;LeftHandListBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="AccpetButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ChestItemLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;RightHandListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LegsItemLabel.Name" xml:space="preserve">
+    <value>LegsItemLabel</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>321, 370</value>
+  </data>
+  <data name="RightHandItemDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="LeftHandItemLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 14</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;LeftHandListBox.Name" xml:space="preserve">
+    <value>LeftHandListBox</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="RightHandPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 130</value>
+  </data>
+  <data name="RightHandItemLabel.Text" xml:space="preserve">
+    <value>Right hand item</value>
+  </data>
+  <data name="RightHandListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 211</value>
+  </data>
+  <data name="&gt;&gt;HeadItemLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LeftHandListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LeftHandPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="RightHandListBox.Items1" xml:space="preserve">
+    <value>Rock</value>
+  </data>
+  <data name="&gt;&gt;RightHandPictureBox.Name" xml:space="preserve">
+    <value>RightHandPictureBox</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemDesc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemDesc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LegsItemLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ChestItemLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LeftHandPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 78</value>
+  </data>
+  <data name="&gt;&gt;HeadPictureBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;RightHandPictureBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="LeftHandPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 130</value>
+  </data>
+  <data name="LegsPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;LeftHandPictureBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="LeftHandListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;AccpetButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="RightHandItemDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 247</value>
+  </data>
+  <data name="HeadItemLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 14</value>
+  </data>
+  <data name="LeftHandItemLabel.Text" xml:space="preserve">
+    <value>Left hand item</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemLabel.Name" xml:space="preserve">
+    <value>LeftHandItemLabel</value>
+  </data>
+  <data name="AccpetButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 311</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemDesc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LeftHandItemDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;LegsItemLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeftHandItemDesc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LegsPictureBox.Name" xml:space="preserve">
+    <value>LegsPictureBox</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;HeadPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeftHandListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 211</value>
+  </data>
+  <data name="HeadPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RightHandPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 78</value>
+  </data>
+  <data name="LegsItemLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 14</value>
+  </data>
+  <data name="LeftHandItemDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 14</value>
+  </data>
+  <data name="AccpetButton.Text" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="RightHandListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 32</value>
+  </data>
+  <data name="AccpetButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 46</value>
+  </data>
+  <data name="LeftHandItemDesc.Text" xml:space="preserve">
+    <value>Item Description</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LegsPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 78</value>
+  </data>
+  <data name="RightHandItemDesc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HeadPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 33</value>
+  </data>
+  <data name="LegsItemLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AccpetButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ChestPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LeftHandListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="HeadItemLabel.Text" xml:space="preserve">
+    <value>Head item</value>
+  </data>
+  <data name="&gt;&gt;LegsPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LegsItemLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;RightHandPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AccpetButton.Name" xml:space="preserve">
+    <value>AccpetButton</value>
+  </data>
+  <data name="RightHandPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;RightHandListBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ChestPictureBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="RightHandItemLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LeftHandPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="HeadItemLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 16</value>
+  </data>
+  <data name="ChestItemLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;HeadPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LeftHandListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="HeadItemLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Starting Items</value>
+  </data>
+  <data name="RightHandItemLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 113</value>
+  </data>
+  <data name="&gt;&gt;RightHandListBox.Name" xml:space="preserve">
+    <value>RightHandListBox</value>
+  </data>
+  <data name="&gt;&gt;RightHandPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LegsItemLabel.Text" xml:space="preserve">
+    <value>Legs item</value>
+  </data>
+  <data name="LeftHandListBox.Items1" xml:space="preserve">
+    <value>Rock</value>
+  </data>
+  <data name="&gt;&gt;HeadItemLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LegsItemLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 266</value>
+  </data>
+  <data name="&gt;&gt;AccpetButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeftHandItemLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ChestPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="RightHandItemDesc.Text" xml:space="preserve">
+    <value>Item Description</value>
+  </data>
+  <data name="LeftHandItemLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LeftHandItemLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 113</value>
+  </data>
+  <data name="ChestItemLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 14</value>
+  </data>
+  <data name="RightHandListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;LeftHandPictureBox.Name" xml:space="preserve">
+    <value>LeftHandPictureBox</value>
+  </data>
+  <data name="LeftHandItemDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 247</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HeadItemLabel.Name" xml:space="preserve">
+    <value>HeadItemLabel</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LegsItemLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LeftHandItemDesc.Name" xml:space="preserve">
+    <value>LeftHandItemDesc</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StartingItemsForm</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 4, 6, 4</value>
+  </data>
+  <data name="LeftHandListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 32</value>
+  </data>
+  <data name="RightHandListBox.Items" xml:space="preserve">
+    <value>Stick</value>
+  </data>
+  <data name="RightHandItemLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ChestItemLabel.Text" xml:space="preserve">
+    <value>Chest item</value>
+  </data>
+  <data name="ChestPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 148</value>
+  </data>
+  <data name="HeadPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 78</value>
+  </data>
+  <data name="&gt;&gt;ChestPictureBox.Name" xml:space="preserve">
+    <value>ChestPictureBox</value>
+  </data>
+  <data name="&gt;&gt;RightHandItemLabel.Name" xml:space="preserve">
+    <value>RightHandItemLabel</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+</root>
